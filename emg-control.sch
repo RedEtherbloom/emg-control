@@ -71,12 +71,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5AF89541
-P 750 2700
-F 0 "#PWR?" H 750 2450 50  0001 C CNN
-F 1 "GNDA" H 755 2527 50  0000 C CNN
-F 2 "" H 750 2700 50  0001 C CNN
-F 3 "" H 750 2700 50  0001 C CNN
-	1    750  2700
+P 750 2800
+F 0 "#PWR?" H 750 2550 50  0001 C CNN
+F 1 "GNDA" H 755 2627 50  0000 C CNN
+F 2 "" H 750 2800 50  0001 C CNN
+F 3 "" H 750 2800 50  0001 C CNN
+	1    750  2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -87,7 +87,7 @@ Wire Wire Line
 	750  2625 825  2625
 Connection ~ 750  2625
 Wire Wire Line
-	750  2625 750  2700
+	750  2625 750  2800
 Wire Wire Line
 	825  2275 750  2275
 Connection ~ 750  2275
@@ -174,7 +174,39 @@ Wire Wire Line
 Wire Wire Line
 	2400 825  2400 800 
 Wire Wire Line
-	2400 800  2150 800 
+	2400 800  2275 800 
 Wire Wire Line
 	2150 800  2150 1175
+$Comp
+L Power_Symbols:+3VA #PWR?
+U 1 1 5AF8EA93
+P 2275 725
+F 0 "#PWR?" H 2275 575 50  0001 C CNN
+F 1 "+3VA" H 2290 898 50  0000 C CNN
+F 2 "" H 2275 725 50  0001 C CNN
+F 3 "" H 2275 725 50  0001 C CNN
+	1    2275 725 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2275 800  2275 725 
+Connection ~ 2275 800 
+Wire Wire Line
+	2275 800  2150 800 
+Text Label 2700 1525 2    50   ~ 0
+DA
+Text Label 2700 1625 2    50   ~ 0
+DB
+Text Label 2700 2275 2    50   ~ 0
+A1
+Text Label 2700 2375 2    50   ~ 0
+A0
+Wire Wire Line
+	2600 2375 2700 2375
+Wire Wire Line
+	2600 2275 2700 2275
+Wire Wire Line
+	2700 1625 2600 1625
+Wire Wire Line
+	2600 1525 2700 1525
 $EndSCHEMATC
