@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADG659
+D Differntial 4:1 Analog Multiplexer
+K Multiplexer, 4:1, Differential
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADG658_659.pdf
+$ENDCMP
+#
+#End Doc Library

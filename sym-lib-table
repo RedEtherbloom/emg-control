@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Analog_Multiplexers)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/Analog_Multiplexers.lib)(options "")(descr ""))
+)
