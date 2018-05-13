@@ -181,12 +181,12 @@ Wire Wire Line
 $Comp
 L Power_Symbols:+3VA #PWR?
 U 1 1 5AF8EA93
-P 2275 725
-F 0 "#PWR?" H 2275 575 50  0001 C CNN
-F 1 "+3VA" H 2290 898 50  0000 C CNN
-F 2 "" H 2275 725 50  0001 C CNN
-F 3 "" H 2275 725 50  0001 C CNN
-	1    2275 725 
+P 2275 675
+F 0 "#PWR?" H 2275 525 50  0001 C CNN
+F 1 "+3VA" H 2275 825 50  0000 C CNN
+F 2 "" H 2275 675 50  0001 C CNN
+F 3 "" H 2275 675 50  0001 C CNN
+	1    2275 675 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -218,7 +218,19 @@ Connection ~ 2400 1150
 Wire Wire Line
 	2400 1150 2400 1125
 Wire Notes Line
-	475  3050 2875 3050
+	475  3050 2950 3050
 Wire Notes Line
-	2875 3050 2875 475 
+	2950 3050 2950 475 
+Text HLabel 2675 725  2    50   Input ~ 0
++3VA
+Wire Wire Line
+	2675 725  2275 725 
+Connection ~ 2275 725 
+Wire Wire Line
+	2275 725  2275 675 
+Text HLabel 2675 2750 2    50   Input ~ 0
+GNDA
+Wire Wire Line
+	2675 2750 2250 2750
+Connection ~ 2250 2750
 $EndSCHEMATC
