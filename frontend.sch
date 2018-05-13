@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:emg-control-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -170,7 +171,7 @@ F 3 "~" H 2400 975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 1175 2400 1125
+	2400 1175 2400 1150
 Wire Wire Line
 	2400 825  2400 800 
 Wire Wire Line
@@ -193,20 +194,31 @@ Wire Wire Line
 Connection ~ 2275 800 
 Wire Wire Line
 	2275 800  2150 800 
-Text Label 2700 1525 2    50   ~ 0
+Wire Wire Line
+	2600 2375 2675 2375
+Wire Wire Line
+	2600 2275 2675 2275
+Wire Wire Line
+	2675 1625 2600 1625
+Wire Wire Line
+	2600 1525 2675 1525
+Text HLabel 2675 1525 2    50   Input ~ 0
 DA
-Text Label 2700 1625 2    50   ~ 0
+Text HLabel 2675 1625 2    50   Input ~ 0
 DB
-Text Label 2700 2275 2    50   ~ 0
+Text HLabel 2675 2275 2    50   Input ~ 0
 A1
-Text Label 2700 2375 2    50   ~ 0
+Text HLabel 2675 2375 2    50   Input ~ 0
 A0
+Text HLabel 2675 1150 2    50   Input ~ 0
+EN
 Wire Wire Line
-	2600 2375 2700 2375
+	2675 1150 2400 1150
+Connection ~ 2400 1150
 Wire Wire Line
-	2600 2275 2700 2275
-Wire Wire Line
-	2700 1625 2600 1625
-Wire Wire Line
-	2600 1525 2700 1525
+	2400 1150 2400 1125
+Wire Notes Line
+	475  3050 2875 3050
+Wire Notes Line
+	2875 3050 2875 475 
 $EndSCHEMATC
